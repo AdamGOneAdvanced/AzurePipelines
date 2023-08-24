@@ -1,6 +1,6 @@
 {
   "name": "azurepipeline",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Trigger Azure pipeline release",
   "main": "lib/main.js",
   "dependencies": {
