@@ -13,15 +13,6 @@ inputs:
   azure-devops-token: 
     description: 'Paste personal access token of the user as value of secret variable:AZURE_DEVOPS_TOKEN' 
     required: true
-runs-on: ubuntu-latest
-
-steps:
-- name: Setup Node.js
-  uses: actions/setup-node@v2
-  with:
-    node-version: '16'
-- name: Install Dependencies
-  run: npm install
-
-- name: Run Azure Pipeline
-  run: node lib/main.js 
+runs: 
+  using: 'node16' 
+  main: 'dist/main.js' 
